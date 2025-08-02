@@ -1,0 +1,96 @@
+/*Propriedades para Tabelas e Formularios*/
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .container h1,
+  .container h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .form-section,
+  .table-section {
+    margin-bottom: 2rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  button {
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .form-section form div {
+    margin-bottom: 1rem;/*Aqui*/
+  }
+
+  .form-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .form-section input[type="text"],
+  .form-section input[type="email"],
+  .form-section input[type="date"],
+  .form-section input[type="number"],
+  .form-section select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .form-section button {
+    margin-top: 1rem;
+    background-color: #28a745;
+  }
+
+  .form-section button:hover {
+    background-color: #218838;
+  }
+
+  .form-section>button {
+    background-color: #dc3545;
+    margin-left: 10px;
+  }
+
+  .table-section button {
+    background-color: #ffc107;
+    color: #333;
+  }
+
+  .table-section button:hover {
+    background-color: #e0a800;
+  }
+
+  .table-section button:last-child {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  .table-section button:last-child:hover,
+  .form-section>button:hover{
+    background-color: #c82333;
+  }

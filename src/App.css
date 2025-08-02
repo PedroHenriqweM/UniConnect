@@ -1,0 +1,140 @@
+/*Propriedades para Home, Header e Footer*/ 
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+ }
+
+ .App {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+ }
+
+ .content {
+   flex-grow: 1;
+   padding: 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  padding: 15px;
+  margin-top: 3rem;
+}
+
+.home-container button {
+  font-size: 15px;
+  margin-right: 42px;
+  padding: 9px 17px;
+  background-color: #4CAF50;
+}
+
+.home-container button:hover {
+  background-color: #218838;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 1rem;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+}
+
+.header-home {
+  margin-bottom: 1rem;
+}
+
+.header-home h1 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-container {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background-color: #4CAF50;
+}
+
+.footer-home {
+  font-size: 1rem;
+  font-style: italic;
+  padding: 10px;
+}
+
+.footer-home p {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #555;
+}
+
+ nav {
+   background-color: #333;
+   padding: 1rem;
+ }
+
+ nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   gap: 24px;
+   margin-top: 10px
+ }
+
+ nav a {
+   text-decoration: none;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+   color: white;
+   font-weight: bold;
+ }
+
+ nav a:hover {
+   background-color: #555;
+ }
