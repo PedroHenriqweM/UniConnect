@@ -13,7 +13,7 @@ import Navebar from './components/Navebar';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/UniConnect">
       <div className="App">
 
         <Header />
