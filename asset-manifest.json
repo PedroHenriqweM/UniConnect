@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/UniConnect/static/css/main.756a0e52.css",
-    "main.js": "/UniConnect/static/js/main.9e3e2d02.js",
+    "main.js": "/UniConnect/static/js/main.07e0f6af.js",
     "index.html": "/UniConnect/index.html",
     "main.756a0e52.css.map": "/UniConnect/static/css/main.756a0e52.css.map",
-    "main.9e3e2d02.js.map": "/UniConnect/static/js/main.9e3e2d02.js.map"
+    "main.07e0f6af.js.map": "/UniConnect/static/js/main.07e0f6af.js.map"
   },
   "entrypoints": [
     "static/css/main.756a0e52.css",
-    "static/js/main.9e3e2d02.js"
+    "static/js/main.07e0f6af.js"
   ]
 }
