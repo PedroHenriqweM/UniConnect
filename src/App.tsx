@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import AlunosPage from './pages/AlunoPage';
 import MatriculasPage from './pages/MatriculaPage';
 import DisciplinasPage from './pages/DisciplinaPage';
@@ -13,7 +12,7 @@ import Navebar from './components/Navebar';
 
 function App() {
   return (
-    <Router basename="/UniConnect">
+    <Router>
       <div className="App">
 
         <Header />
