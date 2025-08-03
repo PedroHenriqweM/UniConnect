@@ -62,7 +62,7 @@ function CursosPage() {
   };
 
   const deleteCurso = (id: number) => {
-    if (window.confirm("Tem certeza que deseja excluir este curso? Disciplinas e  associados a ele também serão afetados.")) {
+    if (window.confirm("Tem certeza que deseja excluir este curso? Disciplinas e Matriculas associados a ele também serão afetados.")) {
 
       // Passo 1: Encontra os IDs das disciplinas que serão removidas
       const disciplinasParaExcluir = disciplinas.filter(d => d.cursoId === id).map(d => d.id);

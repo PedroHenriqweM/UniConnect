@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Aluno, Curso } from '../types';
+import { Aluno, Curso, Matricula } from '../types';
 import AlunoForm from '../components/forms/AlunoForm';
 import AlunoTable from '../components/tables/AlunoTable';
-import { defaultCursos, defaultAlunos } from '../components/InicialValue'
+import { defaultCursos, defaultAlunos, defaultMatriculas } from '../components/InicialValue'
 
 function AlunosPage() {
     const [alunos, setAlunos] = useState<Aluno[]>(() => {
@@ -15,6 +15,11 @@ function AlunosPage() {
         return savedCursos ? JSON.parse(savedCursos) : defaultCursos;
     });
 
+    const [matricula,setMatriculas] = useState<Matricula[]>(() => {
+        const savedMatriculas = localStorage.getItem('matriculas');
+        return savedMatriculas ? JSON.parse(savedMatriculas) : defaultMatriculas;
+    });
+
     const [editingAluno, setEditingAluno] = useState<Aluno | undefined>(undefined);
    
     useEffect(() => {
@@ -24,6 +29,10 @@ function AlunosPage() {
     useEffect(() => {
         localStorage.setItem('cursos', JSON.stringify(cursos));
     }, [cursos]);
+
+    useEffect(() => {
+        localStorage.setItem('matriculas', JSON.stringify(matricula));
+    }, [matricula]);
 
     const createOrUpdateAluno = (aluno: Aluno) => {
         if (aluno.id) {
@@ -42,6 +51,9 @@ function AlunosPage() {
     const deleteAluno = (id: number) => {
         if (window.confirm("Tem certeza que deseja excluir este aluno?")) {
             setAlunos(prevAlunos => prevAlunos.filter(aluno => aluno.id !== id));
+            //Apaga matriculas desses
+            setMatriculas(prevMatriculas => prevMatriculas.filter(m => m.alunoId!== id));
+
         }
     };
 
